@@ -1,17 +1,29 @@
 {
-  "name": "comparycount",
-  "version": "0.1.0",
-  "private": true,
+  "name": "country-comparison",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "client-dev": "cd client && npm run dev",
+    "client-start": "cd client && npm run start",
+    "client-build": "cd client && npm run build",
+    "server-dev": "cd server && npm run dev",
+    "server-start": "cd server && npm run start",
+    "dev": "concurrently \"npm run client-dev\" \"npm run server-dev\"",
+    "start":"concurrently \"npm run client-start\" \"npm run server-start\""
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahimdenizz/country-comparison.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahimdenizz/country-comparison/issues"
+  },
+  "homepage": "https://github.com/ibrahimdenizz/country-comparison#readme",
   "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^4.11.2",
-    "next": "^10.0.6",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "concurrently": "^6.0.2"
   }
 }
