@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"npm run server-dev\"",
     "build": "next build",
-    "start": "next start",
+    "start": "concurrently \"next start\" \"npm run server-start\"",
     "server-start": "cd server && npm start",
     "server-dev": "cd server && npm run dev",
     "repo-start": "concurrently \"npm start\" \"npm run server-start\"",
