@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client-dev": "cd client && npm run dev",
-    "client-start": "cd client && npm run start",
-    "client-build": "cd client && npm run build",
+    "dev": "cd client && npm run dev",
+    "start": "cd client && npm run start",
+    "build": "cd client && npm run build",
     "client-install": "cd client && npm install",
     "server-dev": "cd server && npm run dev",
     "server-start": "cd server && npm run start",
     "server-install":"cd server && npm install",
-    "dev": "concurrently \"npm run client-dev\" \"npm run server-dev\"",
-    "start":"concurrently \"npm run client-start\" \"npm run server-start\"",
+    "repo-dev": "concurrently \"npm run client-dev\" \"npm run server-dev\"",
+    "repo-start":"concurrently \"npm run client-start\" \"npm run server-start\"",
     "build-repo": "concurrently \"npm run client-install\" \"npm run server-install\""
   },
   "repository": {
