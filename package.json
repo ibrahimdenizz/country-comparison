@@ -1,32 +1,22 @@
 {
-  "name": "country-comparison",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "comparycount",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "cd client && npm run dev",
-    "start": "cd client && npm run start",
-    "build": "cd client && npm run build",
-    "client-install": "cd client && npm install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "server-start": "cd server && npm start",
     "server-dev": "cd server && npm run dev",
-    "server-start": "cd server && npm run start",
-    "server-install":"cd server && npm install",
-    "repo-dev": "concurrently \"npm run client-dev\" \"npm run server-dev\"",
-    "repo-start":"concurrently \"npm run client-start\" \"npm run server-start\"",
-    "build-repo": "concurrently \"npm run client-install\" \"npm run server-install\""
+    "repo-start": "concurrently \"npm start\" \"npm run server-start\"",
+    "repo-dev": "concurrently \"npm run dev\" \"npm run server-dev\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ibrahimdenizz/country-comparison.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ibrahimdenizz/country-comparison/issues"
-  },
-  "homepage": "https://github.com/ibrahimdenizz/country-comparison#readme",
   "dependencies": {
-    "concurrently": "^6.0.2"
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "concurrently": "^6.0.2",
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
